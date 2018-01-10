@@ -13,6 +13,8 @@
 		8448A0C120057C4200820345 /* FriendCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8448A0BF20057C4200820345 /* FriendCollector.xcdatamodeld */; };
 		8448A0C320057C4200820345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448A0C220057C4200820345 /* Assets.xcassets */; };
 		8448A0C620057C4200820345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448A0C420057C4200820345 /* LaunchScreen.storyboard */; };
+		8448A0D02005837700820345 /* Stephanie1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8448A0CF2005837700820345 /* Stephanie1.JPG */; };
+		8448A0D2200584B000820345 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448A0D1200584B000820345 /* FriendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8448A0C220057C4200820345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8448A0C520057C4200820345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8448A0C720057C4200820345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8448A0CF2005837700820345 /* Stephanie1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stephanie1.JPG; sourceTree = "<group>"; };
+		8448A0D1200584B000820345 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		8448A0B720057C4200820345 /* FriendCollector */ = {
 			isa = PBXGroup;
 			children = (
+				8448A0CF2005837700820345 /* Stephanie1.JPG */,
 				8448A0B820057C4200820345 /* AppDelegate.swift */,
 				8448A0BA20057C4200820345 /* ViewController.swift */,
+				8448A0D1200584B000820345 /* FriendViewController.swift */,
 				8448A0BC20057C4200820345 /* Main.storyboard */,
 				8448A0C220057C4200820345 /* Assets.xcassets */,
 				8448A0C420057C4200820345 /* LaunchScreen.storyboard */,
@@ -129,6 +135,7 @@
 				8448A0C620057C4200820345 /* LaunchScreen.storyboard in Resources */,
 				8448A0C320057C4200820345 /* Assets.xcassets in Resources */,
 				8448A0BE20057C4200820345 /* Main.storyboard in Resources */,
+				8448A0D02005837700820345 /* Stephanie1.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8448A0D2200584B000820345 /* FriendViewController.swift in Sources */,
 				8448A0BB20057C4200820345 /* ViewController.swift in Sources */,
 				8448A0B920057C4200820345 /* AppDelegate.swift in Sources */,
 				8448A0C120057C4200820345 /* FriendCollector.xcdatamodeld in Sources */,
