@@ -49,18 +49,42 @@ class FriendViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
+        imagePicker.sourceType = .camera
+        
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func addTapped(_ sender: Any) {
+        
+        
+      
+        
+        
+        if friend != nil {
+            friend!.title = titleTextField.text
+            friend!.image = UIImagePNGRepresentation(friendImageView.image!)
+        } else {
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            
+            let friend = Friend(context: context)
+            friend.title = titleTextField.text
+            friend.image = UIImagePNGRepresentation(friendImageView.image!)
+        }
+        
+        
+        
+    (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+    navigationController!.popViewController(animated: true)
+    }
+    
+    @IBAction func deleteTapped(_ sender: Any) {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
-        let friend = Friend(context: context)
-        friend.title = titleTextField.text
-        friend.image = UIImagePNGRepresentation(friendImageView.image!)
+        context.delete(friend!)
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
         navigationController!.popViewController(animated: true)
     }
-    
 }

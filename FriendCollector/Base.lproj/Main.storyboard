@@ -81,6 +81,7 @@
                                 <state key="normal" title="Delete"/>
                                 <connections>
                                     <action selector="addTapped:" destination="PLf-C8-lbb" eventType="touchUpInside" id="DUO-34-q7e"/>
+                                    <action selector="deleteTapped:" destination="PLf-C8-lbb" eventType="touchUpInside" id="HU1-uJ-yzD"/>
                                 </connections>
                             </button>
                         </subviews>
