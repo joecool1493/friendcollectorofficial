@@ -44,6 +44,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let friend = friends[indexPath.row]
+        performSegue(withIdentifier: "friendSegue", sender: friend)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! FriendViewController
+        nextVC.friend = sender as? Friend
+    }
 
 }
 

@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" id="mpn-MK-Tco">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QwQ-aT-Zs7">
                             <connections>
-                                <segue destination="PLf-C8-lbb" kind="show" id="u2c-ai-EG3"/>
+                                <segue destination="PLf-C8-lbb" kind="show" identifier="friendSegue" id="u2c-ai-EG3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,16 +76,25 @@
                                     <action selector="addTapped:" destination="PLf-C8-lbb" eventType="touchUpInside" id="SiT-XM-aX0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBu-oD-udd">
+                                <rect key="frame" x="165" y="378" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="PLf-C8-lbb" eventType="touchUpInside" id="DUO-34-q7e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Wuo-ZD-TVI" firstAttribute="centerX" secondItem="j6J-5d-Ajf" secondAttribute="centerX" id="6m8-FI-frM"/>
                             <constraint firstItem="Wuo-ZD-TVI" firstAttribute="top" secondItem="e3e-NX-YX9" secondAttribute="bottom" constant="38" id="7sq-2M-gqY"/>
+                            <constraint firstItem="qBu-oD-udd" firstAttribute="top" secondItem="b6R-LP-iWz" secondAttribute="bottom" constant="26" id="93z-Kg-Pvm"/>
                             <constraint firstItem="e3e-NX-YX9" firstAttribute="top" secondItem="Z1g-q9-G63" secondAttribute="top" constant="20" id="RBK-OB-FA4"/>
                             <constraint firstItem="b6R-LP-iWz" firstAttribute="top" secondItem="Wuo-ZD-TVI" secondAttribute="bottom" constant="20" id="Z3i-p1-oea"/>
                             <constraint firstItem="b6R-LP-iWz" firstAttribute="centerX" secondItem="j6J-5d-Ajf" secondAttribute="centerX" id="gev-iO-OJj"/>
                             <constraint firstItem="e3e-NX-YX9" firstAttribute="centerX" secondItem="j6J-5d-Ajf" secondAttribute="centerX" id="hio-P1-IAu"/>
                             <constraint firstItem="Wuo-ZD-TVI" firstAttribute="width" secondItem="e3e-NX-YX9" secondAttribute="width" id="qaX-4p-fnh"/>
+                            <constraint firstItem="qBu-oD-udd" firstAttribute="centerX" secondItem="j6J-5d-Ajf" secondAttribute="centerX" id="shj-UR-YOa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z1g-q9-G63"/>
                     </view>
@@ -104,13 +113,15 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addupdatebutton" destination="b6R-LP-iWz" id="FIC-G7-TdK"/>
+                        <outlet property="deleteButton" destination="qBu-oD-udd" id="qVs-wP-GXn"/>
                         <outlet property="friendImageView" destination="e3e-NX-YX9" id="UQ5-rN-Mfb"/>
                         <outlet property="titleTextField" destination="Wuo-ZD-TVI" id="lDh-Tc-dw7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbx-2C-aLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="-55"/>
+            <point key="canvasLocation" x="661.60000000000002" y="-55.322338830584712"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GTv-fU-4Fx">

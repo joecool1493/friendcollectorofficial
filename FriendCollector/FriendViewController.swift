@@ -10,15 +10,27 @@ import UIKit
 
 class FriendViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var deleteButton: UIButton!
+    @IBOutlet weak var addupdatebutton: UIButton!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var friendImageView: UIImageView!
     
     var imagePicker = UIImagePickerController()
+    var friend : Friend? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         imagePicker.delegate = self
+        
+        if friend != nil {
+            friendImageView.image = UIImage(data: friend!.image as! Data)
+            titleTextField.text = friend!.title
+            
+            addupdatebutton.setTitle("Update", for: .normal)
+        } else {
+            deleteButton.isHidden = true
+        }
 
 }
 
